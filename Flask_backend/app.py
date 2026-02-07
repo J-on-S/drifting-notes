@@ -21,6 +21,7 @@ def send_note():
     message = data['message']
     anon_id = data['anon_id']
     insert_note(message, anon_id)
+    return "Note sent!"
 
 
 if __name__ == "__main__":
