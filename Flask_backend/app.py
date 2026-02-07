@@ -3,7 +3,7 @@ from mongo_client import insert_note, get_random_note
 
 app = Flask(__name__, static_folder='static')
 
-@app.route('/api/receive/<string:anon_id>', methods=['GET'])
+@app.route('/api/receive/<anon_id>', methods=['GET'])
 def receive_note(anon_id):
     return jsonify(get_random_note(anon_id))
 
