@@ -17,8 +17,8 @@
             <input type="submit">
         </form>
         <script>
-           const msg = document.querySelector('.message');
-           const aid = document.querySelector('.anon_id');
+           const msg = document.querySelector('#message');
+           const aid = document.querySelector('#anon_id');
            (async function () {
                const response = await fetch('../api/receive/anon-user-placeholder');
                const json = await response.json();
