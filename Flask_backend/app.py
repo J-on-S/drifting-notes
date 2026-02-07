@@ -3,9 +3,9 @@ from mongo_client import insert_note, get_random_note
 
 app = Flask(__name__, static_folder='static')
 
-@app.route('/api/receive/<exclude_user:exclude_user>', methods=['GET'])
-def receive_note(exclude_user):
-    return jsonify(get_random_note(exclude_user))
+@app.route('/api/receive/<anon_id:anon_id>', methods=['GET'])
+def receive_note(anon_id):
+    return jsonify(get_random_note(anon_id))
 
 @app.route('/api/send', methods=['POST'])
 def send_note():
