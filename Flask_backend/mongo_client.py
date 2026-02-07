@@ -1,4 +1,3 @@
-import random
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import os
@@ -12,21 +11,3 @@ try:
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
-
-### Writing to and reading from the database !!
-
-# Get the database named "notes"
-notes_db = client['notes']
-# Get the collection also named "notes"
-notes = notes_db['notes']
-
-# Find a note in the database
-print(notes.find_one())
-
-# Create a new note then save it to the database
-a_new_note = {
-    "message": "hi there" + str(random.randint(0, 2000)),
-    "url": "https://www.google.com",
-    "tags": ['easy-going']
-}
-notes.insert_one(a_new_note)
