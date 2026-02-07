@@ -1,19 +1,16 @@
-from flask import Flask, send_from_directory
+from flask import Flask, send_from_directory, jsonify
 from mongo_client import insert_note, get_random_note
 
 app = Flask(__name__, static_folder='static')
 
-@app.route('/api/receive')
-def receive_note():
-    return "TODO: receive a note"
+@app.get('/api/receive/<exclude_user:exclude_user>', methods=['GET'])
+def receive_note(exclude_user):
+    return jsonify(get_random_note(exclude_user))
 
-@app.route('/api/send')
+@app.route('/api/send', methods=['POST'])
 def send_note():
-    return "TODO: send a note"
+    pass
 
-@app.route('/test')
-def test_note():
-    return str(get_random_note("USER"))
 
 if __name__ == "__main__":
     app.run()
