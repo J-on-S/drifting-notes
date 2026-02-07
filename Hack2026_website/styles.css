@@ -44,3 +44,15 @@
 .gradient-button:active {
     transform: scale(0.97);
 }
+
+.namefont {
+  font-family: "Explora", serif;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 50px;
+}
+
+
+body{
+    background-color: rgba(235, 227, 168, 0.541);
+};
