@@ -9,5 +9,22 @@
             h1 { text-align: center;}
         </style>
         <p>Leave a song and kind message for another. It will brighten their day!</p>
+        <span id="message"></span>
+        <span id="anon_id"></span>
+        <form action="../api/send" method="post">
+            <input type="text" name="message" placeholder="A kind note...">
+            <input type="hidden" name="anon_id" value="anon-user-placeholder">
+            <input type="submit">
+        </form>
+        <script>
+           const msg = document.querySelector('.message') 
+           const aid = document.querySelector('.anon_id') 
+           (async function () {
+               const response = await fetch('../api/receive/anon-user-placeholder')
+               const json = await response.json()
+               msg.innerText = json.message
+               aid.innerText = json.anon_id
+           })()
+        </script>
     </body>
 </html>
