@@ -7,7 +7,12 @@ app = Flask(__name__, static_folder='static')
 
 @app.route('/api/receive/<anon_id>', methods=['GET'])
 def receive_note(anon_id):
-    return jsonify(loads(dumps(get_random_note(anon_id))))
+    note = get_random_note(anon_id)
+    response = {
+        "message": note['text'],
+        "anon_id": note['senderAnonId']
+    }
+    return jsonify(response)
 
 
 @app.route('/api/send', methods=['POST'])
