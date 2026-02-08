@@ -226,6 +226,8 @@ body {
 }
 
 .url {
-    position: absolute;
-    left: 20px;
+    position: relative;
+    left: -435px;
+    top: -50px;
 }
+
