@@ -82,6 +82,17 @@ body {
     background-color: rgba(235, 227, 168, 0.541);
 }
 
+.send-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8em;
+}
 
 .transparent-textbox {
     width: 300px;
@@ -105,9 +116,11 @@ body {
     appearance: none;
     box-shadow: none;
 
+    /* Remove position: relative
     position: relative;
-    left: -60px;   /* move right by 30px */
+    left: -60px;   /* move right by 30px * /
     top: -1px;
+    */
 }
 
 .transparent-textbox2 {
