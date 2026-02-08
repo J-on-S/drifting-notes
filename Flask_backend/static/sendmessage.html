@@ -9,14 +9,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1 class ="namefont">Send a Drifting Note</h1>
-        <style>
-            h1 { text-align: center;}
-        </style>
-        <p style="text-align: center;">Want to send a drifting note? It holds a song and kind message for a stranger! It will brighten their day!</p>
-        
-        <textarea id="messageBox" class="transparent-textbox" placeholder="Type note here..." style="width: 250px; height: 100px;"></textarea>
-        <button id="sendBtn" type="button">Send your Note!</button>
+        <div class="hero2">
+            <h1 class ="namefont2">Send a Drifting Note</h1>
+            <style>
+                h1 { text-align: center;}
+            </style>
+            <p class ="drifting-text" style="text-align: center;">
+                Want to send a drifting note?<br>
+                It holds a song and kind message for a stranger!<br>
+                It will brighten their day!
+            </p>
+            
+            <textarea id="messageBox" class="transparent-textbox" placeholder="Type note here..." style="width: 250px; height: 100px;"></textarea>
+            <button id="sendBtn" class="button-level" type="button">Send your Note!</button>
+
+            <div class="guide-text">
+                <p>Recommended Guidelines:</p>
+                <ul>
+                    <li>Be kind and respectful.</li>
+                    <li>Do not include any hurtful or inappropriate content.</li>
+                    <li>Do not include any personal information.</li>
+                </ul>
+            </div>
+        </div>
     </body>
     <script src="send.js"></script>
 </html>
