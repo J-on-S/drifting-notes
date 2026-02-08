@@ -35,12 +35,10 @@ def send_note():
     anon_id = data['anon_id']
     url = data['url']
     
-    insert_note(message, anon_id, url)
-    return "Note sent!"
-    if not text or not anon_id:
-        return jsonify({"error": "Missing text or anonId"}), 400
+    if not text or not anon_id or not url:
+        return 'Bad Form Request :(\nPlease navigate back <a href="/static/driftingnotes.html>home</a>"', 400
 
-    note_id = insert_note(text, anon_id, music=music)
+    note_id = insert_note(text, anon_id, url)
     return redirect('/static/aftersend.html')
 
 
