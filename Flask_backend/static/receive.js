@@ -5,10 +5,10 @@ receiveBtn.addEventListener("click", () => {
   fetch("../api/receive/random")
     .then(response => response.json())
     .then(data => {
-      messageBox.value = data.message
+      messageBox.innerText = data.message
     })
     .catch(err => {
       console.error(err)
-      messageBox.value = "Something went wrong 😢"
+      messageBox.innerText = "Something went wrong 😢"
     })
 })
