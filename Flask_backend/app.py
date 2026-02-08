@@ -9,9 +9,11 @@ app = Flask(__name__, static_folder='static')
 def redirect_index():
     return redirect('/static/driftingnotes.html')
 
+
 @app.route('/images/<path:path>')
 def serve_images(path):
     return send_from_directory('static/images', path)
+
 
 @app.route('/api/receive/<anon_id>', methods=['GET'])
 def receive_note(anon_id):
@@ -39,9 +41,7 @@ def send_note():
         return jsonify({"error": "Missing text or anonId"}), 400
 
     note_id = insert_note(text, anon_id, music=music)
-    return jsonify({"id": str(note_id)}), 201
-
-
+    return redirect('/static/driftingnotes.html')
 
 
 if __name__ == "__main__":
