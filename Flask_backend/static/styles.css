@@ -1,0 +1,84 @@
+ /* Buttons will be side by side */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 100vh;
+}
+         
+/*gives button a colour gradient */
+.gradient-button {
+    width: 180px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #5fc4ff, #2e8edd);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    text-decoration: none;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* gives the button a shadow (for pop-out effect! so cute!) */
+.gradient-button:hover {
+    background: linear-gradient(to right, #5fc4ff, #2e8edd);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* scales the shadow to be bigger when cursor hovers */
+.gradient-button:active {
+    transform: scale(0.97);
+}
+
+.namefont {
+  font-family: "Explora", serif;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 50px;
+}
+
+
+body {
+    font-family: "times new roman", serif;
+    text-align: left;
+    background-color: rgba(235, 227, 168, 0.541);
+}
+
+
+.transparent-textbox {
+    width: 300px;
+    min-height: 120px;
+
+    background: transparent;   /* transparent background */
+    border: none;              /* remove borders */
+    color: rgb(59, 31, 12);              /* text color */
+    padding: 0;                
+    resize: none;              
+    outline: none;             
+    line-height: 1.6;
+
+    /* Auto line wrapping */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    /* remove the default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+}
