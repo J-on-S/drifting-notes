@@ -16,11 +16,12 @@ except Exception as e:
 db = client["Drifting_Notes"]
 notes = db["notes"]
 
-def insert_note(text: str, sender_anon_id: str):
+def insert_note(text: str, sender_anon_id: str, music: str):
     result = notes.insert_one({
         "text": text,
         "createdAt": datetime.utcnow(),
-        "senderAnonId": sender_anon_id
+        "senderAnonId": sender_anon_id,
+        "music": music
     })
     return result.inserted_id
 
