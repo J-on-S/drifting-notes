@@ -41,7 +41,7 @@ def send_note():
         return jsonify({"error": "Missing text or anonId"}), 400
 
     note_id = insert_note(text, anon_id, music=music)
-    return redirect('/static/driftingnotes.html')
+    return redirect('/static/aftersend.html')
 
 
 if __name__ == "__main__":

@@ -19,14 +19,20 @@
                 It holds a song and kind message for a stranger!<br>
                 It will brighten their day!
             </p>
-            <div class="button-container">
-                <a href="aftersend.html" class="gradient-button">Send your note!</a>
-            </div>
-            
-            <textarea id="messageBox" class="transparent-textbox" placeholder="Type note here..." style="width: 250px; height: 100px;"></textarea>
-            <button id="sendBtn" class="button-level" type="button">Send your Note!</button>
 
-            
+            <form action="../api/send" method="POST">
+                <textarea id="messageBox" name="message" class="transparent-textbox" placeholder="Type note here..." style="width: 250px; height: 100px;"></textarea>
+                <input type="hidden" id="anon_id" name="anon_id" value="anon-placeholder">
+                <label for="url">Put a spotify URL here</label>
+                <input type="text" id="url" name="url">
+                <!--
+                    TODO: Choose between button-container with gradient-button and button-level.
+                    <button id="sendBtn" class="button-level" type="button">Send your Note!</button>
+                -->
+                <div class="button-container">
+                    <input type="submit" class="gradient-button">Send your note!</a>
+                </div>
+            </form>
 
             <div class="guide-text">
                 <p>Recommended Guidelines:</p>

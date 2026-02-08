@@ -6,7 +6,7 @@
     gap: 24px;
     height: 100vh;
 }
-         
+
 /*gives button a colour gradient */
 .gradient-button {
     width: 180px;
@@ -61,7 +61,7 @@
     top: 20px;            /* distance from the top of the page */
     right: 20px;          /* distance from the right edge */
     margin: 0;            /* remove default margins */
-    color: rgb(59, 31, 12);  
+    color: rgb(59, 31, 12);
 }
 
 .namefont3 {
@@ -73,7 +73,7 @@
     top: 20px;            /* distance from the top of the page */
     left: 20px;          /* distance from the right edge */
     margin: 0;            /* remove default margins */
-    color: rgb(59, 31, 12);  
+    color: rgb(59, 31, 12);
 }
 
 body {
@@ -90,9 +90,9 @@ body {
     background: transparent;   /* transparent background */
     border: none;              /* remove borders */
     color: rgb(59, 31, 12);              /* text color */
-    padding: 0;                
-    resize: none;              
-    outline: none;             
+    padding: 0;
+    resize: none;
+    outline: none;
     line-height: 1.6;
 
     /* Auto line wrapping */
@@ -107,7 +107,7 @@ body {
 
     position: relative;
     left: -60px;   /* move right by 30px */
-    top: -1px;       
+    top: -1px;
 }
 
 .transparent-textbox2 {
@@ -117,9 +117,9 @@ body {
     background: transparent;   /* transparent background */
     border: none;              /* remove borders */
     color: rgb(59, 31, 12);              /* text color */
-    padding: 0;                
-    resize: none;              
-    outline: none;             
+    padding: 0;
+    resize: none;
+    outline: none;
     line-height: 1.6;
 
     /* Auto line wrapping */
@@ -134,7 +134,7 @@ body {
 
     position: relative;
     left: -60px;   /* move right by 30px */
-    top: 50px;       
+    top: 50px;
 }
 
 .hero {
