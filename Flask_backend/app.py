@@ -9,6 +9,10 @@ app = Flask(__name__, static_folder='static')
 def redirect_index():
     return redirect('/static/driftingnotes.html')
 
+@app.route('/images/<path:path>')
+def serve_images(path):
+    return send_from_directory('images', path)
+
 @app.route('/api/receive/<anon_id>', methods=['GET'])
 def receive_note(anon_id):
     note = get_random_note(anon_id)
