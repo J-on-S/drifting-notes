@@ -4,7 +4,6 @@ const messageInput = document.getElementById("messageInput")
 sendBtn.addEventListener("click", () => {
   const message = messageInput.value
 
-  // optional safety check
   if (message.trim() === "") {
     alert("Please write a message first!")
     return
@@ -20,7 +19,6 @@ sendBtn.addEventListener("click", () => {
     })
   })
   .then(() => {
-    messageInput.value = ""   // clear box
-    alert("Your note has been sent 💛")
+    messageInput.value = "" 
   })
 })

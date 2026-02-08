@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    /* remove height: 100vh
     height: 100vh;
+    */
 }
 
 /*gives button a colour gradient */
@@ -82,6 +84,17 @@ body {
     background-color: rgba(235, 227, 168, 0.541);
 }
 
+.send-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 4em 0 0;
+}
 
 .transparent-textbox {
     width: 300px;
@@ -105,9 +118,11 @@ body {
     appearance: none;
     box-shadow: none;
 
+    /* Remove position: relative
     position: relative;
-    left: -60px;   /* move right by 30px */
+    left: -60px;   /* move right by 30px * /
     top: -1px;
+    */
 }
 
 .transparent-textbox2 {
@@ -170,31 +185,41 @@ body {
 }
 
 .drifting-text {
-    position: relative;
-    left: -70px;  /* move left */
-    top: -25px;   /* move up */
+    /* Remove position: relative
 
+    position: relative;
+    left: -70px;  / * move left * /
+    top: -25px;   / * move up * /
+
+    */
 }
 
 .drifting-text2 {
-    position: relative;
-    left: -60px;  /* move left */
-    top: -35px;   /* move up */
+    /* Remove position: relative
 
+    position: relative;
+    left: -60px;  /* move left * /
+    top: -35px;   /* move up * /
+
+    */
 }
 
 .guide-text {
-    position: absolute;   /* place it anywhere on the page */
-    top: 260px;           /* adjust vertical position */
-    left: 20px;           /* distance from left edge */
-    width: 250px;         /* optional: limit width */
+    /* Remove position: absolute
+    position: absolute;   /* place it anywhere on the page * /
+    top: 260px;           /* adjust vertical position * /
+    left: 20px;           /* distance from left edge * /
+    width: 250px;         /* optional: limit width * /
+    */
     text-align: left;     /* align text and list inside container */
 }
 
 .button-level {
-    position: absolute;   /* place it anywhere on the page */
-    top: 500px;           /* adjust vertical position */
-    right: 630px;          /* distance from right edge */
+    /* Remove position: absolute
+    position: absolute;   /* place it anywhere on the page * /
+    top: 500px;           /* adjust vertical position * /
+    right: 630px;          /* distance from right edge * /
+    */
     background: linear-gradient(to right, #56340d, #743908);
     color: rgb(239, 225, 214);
     border: none;
@@ -217,9 +242,11 @@ body {
 }
 
 .button-level2 {
-    position: absolute;   /* place it anywhere on the page */
-    top: 260px;           /* adjust vertical position */
-    right: 630px;          /* distance from right edge */
+    /* Remove position: absolute
+    position: absolute;   /* place it anywhere on the page * /
+    top: 260px;           /* adjust vertical position * /
+    right: 630px;          /* distance from right edge * /
+    */
     background: linear-gradient(to right, #56340d, #743908);
     color: rgb(239, 225, 214);
     border: none;
