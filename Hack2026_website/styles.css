@@ -144,3 +144,9 @@ body {
     width: 250px;         /* optional: limit width */
     text-align: left;     /* align text and list inside container */
 }
+
+.button-level {
+    position: absolute;   /* place it anywhere on the page */
+    top: 400px;           /* adjust vertical position */
+    right: 600px;          /* distance from right edge */
+}
