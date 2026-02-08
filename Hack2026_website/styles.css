@@ -73,7 +73,7 @@ body {
 
 .transparent-textbox {
     width: 300px;
-    min-height: 200px;
+    min-height: 170px;
 
     background: transparent;   /* transparent background */
     border: none;              /* remove borders */
@@ -147,6 +147,6 @@ body {
 
 .button-level {
     position: absolute;   /* place it anywhere on the page */
-    top: 400px;           /* adjust vertical position */
-    right: 600px;          /* distance from right edge */
+    top: 500px;           /* adjust vertical position */
+    right: 620px;          /* distance from right edge */
 }
