@@ -11,7 +11,7 @@ def redirect_index():
 
 @app.route('/images/<path:path>')
 def serve_images(path):
-    return send_from_directory('images', path)
+    return send_from_directory('static/images', path)
 
 @app.route('/api/receive/<anon_id>', methods=['GET'])
 def receive_note(anon_id):
