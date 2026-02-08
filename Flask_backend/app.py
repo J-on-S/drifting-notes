@@ -23,7 +23,7 @@ def receive_note(anon_id):
     response = {
         "message": note['text'],
         "anon_id": note['senderAnonId'],
-        "url": note.get("url")
+        "url": note.get("music")
     }
     return jsonify(response)
 
