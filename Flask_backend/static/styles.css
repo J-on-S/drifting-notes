@@ -76,6 +76,19 @@
     color: rgb(59, 31, 12);
 }
 
+.namefont4 {
+    font-family: "Explora", serif;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 65px;
+    margin: 20px 0 0 0;   /* small margin from top of page */
+    text-align: center;
+    color: rgb(44, 20, 4);
+
+    position: relative;    /* default flow positioning */
+    top: -200px;                /* ensures it starts at the top */
+}
+
 body {
     font-family: "times new roman", serif;
     text-align: left;
@@ -180,7 +193,6 @@ body {
     position: relative;
     left: -60px;  /* move left */
     top: -35px;   /* move up */
-
 }
 
 .guide-text {
@@ -229,5 +241,35 @@ body {
     position: relative;
     left: -435px;
     top: -50px;
+}
+
+.button-level3 {
+    position: absolute;   /* place it anywhere on the page */
+    top: 60px;           /* adjust vertical position */
+    right: 20px;          /* distance from right edge */
+    background: linear-gradient(to right, #56340d, #743908);
+    color: rgb(239, 225, 214);
+    border: none;
+}
+
+.hero4 {
+    background-image: url('../images/IMG_3397.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(44, 20, 4);
+    padding: 0;
+    position: relative;
+}
+
+.movetext {
+    position: relative;
+    top: 150px;   /* move down */
 }
 
