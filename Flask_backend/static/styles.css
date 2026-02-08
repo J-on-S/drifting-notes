@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(to right, #5fc4ff, #2e8edd);
+    background: linear-gradient(to right, #56340d, #743908);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -49,7 +49,7 @@
   font-family: "Explora", serif;
   font-weight: 800;
   font-style: bold;
-  font-size: 50px;
+  font-size: 65px;
 }
 
 
@@ -81,4 +81,20 @@ body {
     -moz-appearance: none;
     appearance: none;
     box-shadow: none;
+}
+
+.hero {
+    background-image: url('../images/bd4d34d9-9bea-4d5f-a930-56e25a145046.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(44, 20, 4);
+    padding: 0;
+    position: relative;
 }
