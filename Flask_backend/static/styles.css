@@ -225,9 +225,7 @@ body {
     border: none;
 }
 
-#url {
+.url {
     position: absolute;
     left: 20px;
-    top: 200px;   /* adjust as needed */
-    width: 250px;
 }
