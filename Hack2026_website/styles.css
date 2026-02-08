@@ -64,6 +64,18 @@
     color: rgb(59, 31, 12);  
 }
 
+.namefont3 {
+    font-family: "Explora", serif;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 65px;
+    position: absolute;   /* take it out of normal flow */
+    top: 20px;            /* distance from the top of the page */
+    left: 20px;          /* distance from the right edge */
+    margin: 0;            /* remove default margins */
+    color: rgb(59, 31, 12);  
+}
+
 body {
     font-family: "times new roman", serif;
     text-align: left;
@@ -96,6 +108,33 @@ body {
     position: relative;
     left: -60px;   /* move right by 30px */
     top: -1px;       
+}
+
+.transparent-textbox2 {
+    width: 300px;
+    min-height: 170px;
+
+    background: transparent;   /* transparent background */
+    border: none;              /* remove borders */
+    color: rgb(59, 31, 12);              /* text color */
+    padding: 0;                
+    resize: none;              
+    outline: none;             
+    line-height: 1.6;
+
+    /* Auto line wrapping */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    /* remove the default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+
+    position: relative;
+    left: -60px;   /* move right by 30px */
+    top: 50px;       
 }
 
 .hero {
@@ -137,6 +176,13 @@ body {
 
 }
 
+.drifting-text2 {
+    position: relative;
+    left: -60px;  /* move left */
+    top: -35px;   /* move up */
+
+}
+
 .guide-text {
     position: absolute;   /* place it anywhere on the page */
     top: 260px;           /* adjust vertical position */
@@ -148,6 +194,31 @@ body {
 .button-level {
     position: absolute;   /* place it anywhere on the page */
     top: 500px;           /* adjust vertical position */
+    right: 630px;          /* distance from right edge */
+    background: linear-gradient(to right, #56340d, #743908);
+    color: rgb(239, 225, 214);
+    border: none;
+}
+
+.hero3 {
+    background-image: url('../images/a9a94c36-f802-4a4a-8cdd-dab78ec06c89.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(44, 20, 4);
+    padding: 0;
+    position: relative;
+}
+
+.button-level2 {
+    position: absolute;   /* place it anywhere on the page */
+    top: 260px;           /* adjust vertical position */
     right: 630px;          /* distance from right edge */
     background: linear-gradient(to right, #56340d, #743908);
     color: rgb(239, 225, 214);
