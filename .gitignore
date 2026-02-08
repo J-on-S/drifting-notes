@@ -1,0 +1,4 @@
+# Exclude these files from the repository
+
+**/.DS_Store
+**/__pycache__/*
