@@ -224,3 +224,10 @@ body {
     color: rgb(239, 225, 214);
     border: none;
 }
+
+#url {
+    position: absolute;
+    left: 20px;
+    top: 200px;   /* adjust as needed */
+    width: 250px;
+}
