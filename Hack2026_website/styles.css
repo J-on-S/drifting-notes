@@ -148,5 +148,8 @@ body {
 .button-level {
     position: absolute;   /* place it anywhere on the page */
     top: 500px;           /* adjust vertical position */
-    right: 620px;          /* distance from right edge */
+    right: 630px;          /* distance from right edge */
+    background: linear-gradient(to right, #56340d, #743908);
+    color: rgb(239, 225, 214);
+    border: none;
 }
