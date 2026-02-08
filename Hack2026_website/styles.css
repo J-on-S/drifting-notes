@@ -35,7 +35,7 @@
 
 /* gives the button a shadow (for pop-out effect! so cute!) */
 .gradient-button:hover {
-    background: linear-gradient(to right, #5fc4ff, #2e8edd);
+    background: linear-gradient(to right, #1b80ba, #075ca2);
     transform: translateY(-4px) scale(1.03);
     box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
@@ -52,6 +52,17 @@
   font-size: 65px;
 }
 
+.namefont2 {
+    font-family: "Explora", serif;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 65px;
+    position: absolute;   /* take it out of normal flow */
+    top: 20px;            /* distance from the top of the page */
+    right: 20px;          /* distance from the right edge */
+    margin: 0;            /* remove default margins */
+    color: rgb(59, 31, 12);  
+}
 
 body {
     font-family: "times new roman", serif;
@@ -62,7 +73,7 @@ body {
 
 .transparent-textbox {
     width: 300px;
-    min-height: 120px;
+    min-height: 200px;
 
     background: transparent;   /* transparent background */
     border: none;              /* remove borders */
@@ -81,6 +92,10 @@ body {
     -moz-appearance: none;
     appearance: none;
     box-shadow: none;
+
+    position: relative;
+    left: -60px;   /* move right by 30px */
+    top: -1px;       
 }
 
 .hero {
@@ -97,4 +112,35 @@ body {
     color: rgb(44, 20, 4);
     padding: 0;
     position: relative;
+}
+
+.hero2 {
+    background-image: url('../images/bb31bbbe-1fc3-46a9-8a86-cdb8e07eefde.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(44, 20, 4);
+    padding: 0;
+    position: relative;
+}
+
+.drifting-text {
+    position: relative;
+    left: -70px;  /* move left */
+    top: -25px;   /* move up */
+
+}
+
+.guide-text {
+    position: absolute;   /* place it anywhere on the page */
+    top: 260px;           /* adjust vertical position */
+    left: 20px;           /* distance from left edge */
+    width: 250px;         /* optional: limit width */
+    text-align: left;     /* align text and list inside container */
 }
