@@ -36,7 +36,7 @@ def send_note():
     url = data['url']
     
     if not message or not anon_id or not url:
-        return 'Bad Form Request :(\nPlease navigate back <a href="/static/driftingnotes.html>home</a>"', 400
+        return 'Bad Form Request :(\nPlease navigate back <a href="/static/driftingnotes.html">home</a>', 400
 
     note_id = insert_note(message, anon_id, url)
     return redirect('/static/aftersend.html')
