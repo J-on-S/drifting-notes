@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    /* remove height: 100vh
     height: 100vh;
+    */
 }
 
 /*gives button a colour gradient */
