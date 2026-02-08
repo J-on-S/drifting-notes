@@ -53,6 +53,32 @@
 }
 
 
-body{
+body {
+    font-family: "times new roman", serif;
+    text-align: left;
     background-color: rgba(235, 227, 168, 0.541);
-};
+}
+
+
+.transparent-textbox {
+    width: 300px;
+    min-height: 120px;
+
+    background: transparent;   /* transparent background */
+    border: none;              /* remove borders */
+    color: rgb(59, 31, 12);              /* text color */
+    padding: 0;                
+    resize: none;              
+    outline: none;             
+    line-height: 1.6;
+
+    /* Auto line wrapping */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    /* remove the default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+}
