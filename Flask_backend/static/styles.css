@@ -53,11 +53,6 @@
 }
 
 
-<<<<<<< HEAD:Flask_backend/static/styles.css
-body{
-    background-color: rgba(235, 227, 168, 0.541);
-};
-=======
 body {
     font-family: "times new roman", serif;
     text-align: left;
@@ -87,4 +82,3 @@ body {
     appearance: none;
     box-shadow: none;
 }
->>>>>>> frontend:Hack2026_website/styles.css
